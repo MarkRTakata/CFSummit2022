@@ -1,0 +1,96 @@
+:root {
+  --color-primary: #005aff;
+  --color-secondary: #000f34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(
+    124deg,
+    var(--color-primary) 20%,
+    var(--color-secondary) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: adobe-clean, sans-serif;
+  font-weight: 400;
+  color: white;
+  min-height: 100%;
+}
+
+.logotype img {
+  display: block;
+  width: 85%;
+  max-width: 250px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.divider {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.divider .section_name {
+  padding-left: 1rem;
+}
+
+.session-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.session-info .time {
+  justify-self: end;
+  padding: 2px 5px 2px 2px;
+}
+
+.session-info .session-title {
+  justify-self: start;
+  padding: 2px 2px 2px 8px;
+}
+
+.session-info .session-speaker {
+  justify-self: start;
+  font-size: .8rem;
+  font-weight: 100;
+  padding: 2px 2px 2px 8px;
+  color: #ddd;
+}
+
+.session-info:hover {
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.logos img {
+  cursor: pointer;
+  width: 50px;
+  margin-inline: 1rem;
+}
